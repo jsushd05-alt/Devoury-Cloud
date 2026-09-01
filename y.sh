@@ -44,8 +44,8 @@ get_metrics() {
 
     CPU="$(top -bn1 2>/dev/null |
         awk '/Cpu\(s\)/ {
-            printf "%.0f", $2 + $4r
-            exist 
+            printf "%.0f", $2 + $4
+            exit 
         }')"
 
     RAM="$(free 2>/dev/null |
