@@ -26,14 +26,13 @@ NC='\033[0m'
 # Replace these with your actual module URLs
 # ────────────────────────────────────────────────────────────
 
-VPS_URL="https://example.com/vps.sh"
-PANEL_URL="https://example.com/panel.sh"
-WINGS_URL="https://example.com/wings.sh"
-TOOLBOX_URL="https://example.com/toolbox.sh"
-THEMES_URL="https://example.com/themes.sh"
-SYSTEM_URL="https://example.com/system.sh"
-CONTAINER_URL="https://example.com/container.sh"
-EXTRAS_URL="https://example.com/extras.sh"
+VPS_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/setup%20vm/menu.sh)"
+PANEL_URL=" bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/panel/1.sh)"
+WINGS_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/wings/run.sh)"
+TOOLBOX_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/tools/run.sh)"
+THEMES_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/thame/run.sh)"
+SYSTEM_URL=" bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh)"
+CONTAINER_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh)"
 
 # ────────────────────────────────────────────────────────────
 # SYSTEM METRICS
@@ -93,15 +92,15 @@ button() {
 
 draw_header() {
 
-    echo -e "${CYAN}"
+    echo -e "${GREEN}"
 
     cat <<'EOF'
- ██████╗ ███████╗██╗   ██╗ ██████╗ ██████╗ ██╗   ██╗
- ██╔══██╗██╔════╝██║   ██║██╔═══██╗██╔══██╗╚██╗ ██╔╝
- ██║  ██║█████╗  ██║   ██║██║   ██║██████╔╝ ╚████╔╝
- ██║  ██║██╔══╝  ╚██╗ ██╔╝██║   ██║██╔══██╗  ╚██╔╝
- ██████╔╝███████╗ ╚████╔╝ ╚██████╔╝██║  ██║   ██║
- ╚═════╝ ╚══════╝  ╚═══╝   ╚═════╝ ╚═╝  ╚═╝   ╚═╝
+ ██████╗ ███████╗██╗   ██╗ ██████╗   ██████╗ ██╗   ██╗
+ ██╔══██╗██╔════╝██║   ██║██╔═══██╗ ██╔══██╗╚██╗ ██╔╝
+ ██║  ██║█████╗  ██║   ██║██║     ██║ ██████╔╝ ╚████╔╝
+ ██║  ██║██╔══╝  ╚██╗ ██╔╝██║    ██║ ██╔══██╗   ╚██╔╝
+ ██████╔╝███████╗ ╚████╔╝ ╚██████╔╝ ██║  ██║    ██║
+ ╚═════╝ ╚══════╝  ╚═══╝   ╚═════╝   ╚═╝  ╚═╝    ╚═╝
 EOF
 
     echo -e "${NC}"
@@ -156,7 +155,6 @@ draw_dashboard() {
     button "5" "THEMES"
     button "6" "SYSTEM"
     button "7" "CONTAINER"
-    button "8" "EXTRAS"
 
     echo
 
@@ -267,11 +265,7 @@ while true; do
         7)
             run_module "$CONTAINER_URL"
             ;;
-
-        8)
-            run_module "$EXTRAS_URL"
-            ;;
-
+            
         0|exit|quit)
 
             clear
