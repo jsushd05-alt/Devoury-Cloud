@@ -26,13 +26,13 @@ NC='\033[0m'
 # Replace these with your actual module URLs
 # ────────────────────────────────────────────────────────────
 
-VPS_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/setup%20vm/menu.sh)"
-PANEL_URL=" bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/panel/1.sh)"
-WINGS_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/wings/run.sh)"
-TOOLBOX_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/tools/run.sh)"
-THEMES_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/thame/run.sh)"
-SYSTEM_URL=" bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh)"
-CONTAINER_URL="bash <(curl -s https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh)"
+VPS_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/setup%20vm/menu.sh"
+PANEL_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/panel/1.sh"
+WINGS_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/wings/run.sh"
+TOOLBOX_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/tools/run.sh"
+THEMES_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/thame/run.sh"
+SYSTEM_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh"
+CONTAINER_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh"
 
 # ────────────────────────────────────────────────────────────
 # SYSTEM METRICS
@@ -44,8 +44,8 @@ get_metrics() {
 
     CPU="$(top -bn1 2>/dev/null |
         awk '/Cpu\(s\)/ {
-            printf "%.0f", $2 + $4
-            exit
+            printf "%.0f", $2 + $4r
+            exist 
         }')"
 
     RAM="$(free 2>/dev/null |
