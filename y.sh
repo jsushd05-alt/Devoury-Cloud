@@ -31,7 +31,7 @@ PANEL_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/m
 WINGS_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/wings/run.sh"
 TOOLBOX_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/tools/run.sh"
 THEMES_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/thame/run.sh"
-SYSTEM_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh"
+SYSTEM_URL="https://raw.githubusercontent.com/nobita329/The-Coding-Hub/refs/heads/main/srv/menu/System1.sh"
 CONTAINER_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh"
 
 # ────────────────────────────────────────────────────────────
