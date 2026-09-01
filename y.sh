@@ -21,16 +21,16 @@ GRAY='\033[0;37m'
 DARK='\033[0;90m'
 NC='\033[0m'
 
-# ────────────────────────────────────────────────────────────
+# ──────────────────────────────────────────────────
 # MODULE LINKS
 # Replace these with your actual module URLs
 # ────────────────────────────────────────────────────────────
 
-VPS_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/setup%20vm/menu.sh"
-PANEL_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/panel/1.sh"
-WINGS_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/wings/run.sh"
-TOOLBOX_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/tools/run.sh"
-THEMES_URL="https://raw.githubusercontent.com/nobita329/Nobita-Cloud/refs/heads/main/thame/run.sh"
+VPS_URL="https://raw.githubusercontent.com/jsushd05-alt/Devoury-Cloud/main/vps.sh"
+PANEL_URL="https://raw.githubusercontent.com/jsushd05-alt/Devoury-Cloud/main/panel.sh"
+WINGS_URL="https://raw.githubusercontent.com/jsushd05-alt/Devoury-Cloud/main/wings.sh"
+TOOLBOX_URL="https://raw.githubusercontent.com/jsushd05-alt/Devoury-Cloud/main/tools.sh"
+THEMES_URL="https://raw.githubusercontent.com/jsushd05-alt/Devoury-Cloud/main/theme.sh"
 SYSTEM_URL="https://raw.githubusercontent.com/nobita329/The-Coding-Hub/refs/heads/main/srv/menu/System1.sh"
 CONTAINER_URL="https://raw.githubusercontent.com/nobita329/ptero/refs/heads/main/ptero/no-kvm/run.sh"
 
